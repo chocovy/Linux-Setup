@@ -4,7 +4,7 @@
 sudo apt update && sudo apt upgrade -y
 
 # Install basic utilities
-sudo apt install -y curl wget git vim unzip build-essential
+sudo apt install -y curl wget git vim unzip build-essential gdb
 
 # Install Python and Ruby
 sudo apt install -y python3 python3-pip python3-dev ruby libssl-dev libffi-dev
