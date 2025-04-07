@@ -37,6 +37,7 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 
 # Add current user to docker group
 sudo usermod -aG docker "$USER"
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 
 # Final message
 echo
