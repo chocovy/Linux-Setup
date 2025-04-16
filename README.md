@@ -1,18 +1,5 @@
 # Linux-Setup
 
-## 🖥️ Environment
-
-- Ubuntu 22.04 LTS
-- WSL 2 (Ubuntu)
-
-## 📦 Features
-
-- **GEF** – GDB Enhanced Features for binary debugging  
-- **pwntools** – Python-based exploit development library  
-- **ROPGadget** – Tool for finding ROP gadgets in binaries  
-- **one_gadget** – Tool to find one-shot RCE gadgets in libc  
-- **Docker CE & Compose** – For containerized exploit/testing environments  
-
 ## ⚙️ Usage
 
 To get started, first install and set up **Zsh** (required for running the setup script):
@@ -33,10 +20,17 @@ cd Linux-Setup
 zsh setup.sh
 ```
 
-## 🐳 Docker Permission Note
 
-After the setup, your user is added to the `docker` group.  
-To apply the change:
+## 🖥️ Environment
 
-- **Log out and back in**, or  
-- Run `newgrp docker` in your terminal
+- Ubuntu 22.04 LTS
+- WSL 2 (Ubuntu)
+
+## 📦 Features
+
+- **GEF / angelheap** – GDB Enhanced Features for binary debugging  
+- **pwntools** – Python-based exploit development library  
+- **ROPGadget** – Tool for finding ROP gadgets in binaries  
+- **one_gadget** – Tool to find one-shot RCE gadgets in libc  
+- **Docker CE & Compose** – For containerized exploit/testing environments  
+
