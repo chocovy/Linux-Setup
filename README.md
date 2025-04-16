@@ -28,7 +28,7 @@ zsh
 Then, clone this repository and run the setup script with Zsh:
 
 ```bash
-git clone https://github.com/yourusername/Linux-Setup.git
+git clone https://github.com/chocovy/Linux-Setup.git
 cd Linux-Setup
 zsh setup.sh
 ```
