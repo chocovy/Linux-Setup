@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Update and upgrade system
 sudo apt update && sudo apt upgrade -y
@@ -16,7 +16,7 @@ python3 -m pip install ROPGadget
 sudo gem install one_gadget
 
 # Install GEF for GDB
-zsh -c "$(curl -fsSL https://gef.blah.cat/sh)"
+sh -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
 # Install angelheap
 git clone https://github.com/scwuaptx/Pwngdb.git ~/.Pwngdb
