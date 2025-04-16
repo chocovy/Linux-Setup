@@ -35,7 +35,6 @@ end
 end
 EOF
 
-
 # Install Docker dependencies
 sudo apt install -y ca-certificates gnupg lsb-release
 
