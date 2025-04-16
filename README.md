@@ -23,8 +23,8 @@ zsh setup.sh
 
 ## 🖥️ Environment
 
-- Ubuntu 22.04 LTS
 - WSL 2 (Ubuntu)
+- Ubuntu 22.04 LTS
 
 ## 📦 Features
 
