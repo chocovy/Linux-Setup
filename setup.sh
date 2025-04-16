@@ -18,6 +18,24 @@ sudo gem install one_gadget
 # Install GEF for GDB
 zsh -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
+# Install angelheap
+git clone https://github.com/scwuaptx/Pwngdb.git ~/.Pwngdb
+
+# Configure angelheap in .gdbinit
+cat <<EOF >> ~/.gdbinit
+
+# Load angelheap
+source ~/.Pwngdb/angelheap/gdbinit.py
+
+define hook-run
+python
+import angelheap
+angelheap.init_angelheap()
+end
+end
+EOF
+
+
 # Install Docker dependencies
 sudo apt install -y ca-certificates gnupg lsb-release
 
