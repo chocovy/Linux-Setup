@@ -5,7 +5,7 @@
 To get started, first install and set up **Zsh** (required for running the setup script):
 
 ```bash
-sudo apt install -y zsh curl
+sudo apt install -y zsh curl git
 zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 zsh
 ```
