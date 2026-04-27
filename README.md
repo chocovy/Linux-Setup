@@ -24,7 +24,7 @@ sh setup.sh
 ## 🖥️ Environment
 
 - WSL 2 (Ubuntu)
-- Ubuntu 22.04 LTS
+- Ubuntu 24.04 LTS
 
 ## 📦 Features
 
