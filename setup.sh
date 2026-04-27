@@ -26,7 +26,8 @@ python3.11 -m pip install ROPGadget
 sudo gem install one_gadget
 
 # Install GEF (bata24 fork)
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
+wget https://raw.githubusercontent.com/bata24/gef/dev/gef.py
+echo "source $(pwd)/gef.py" >> ~/.gdbinit
 
 # Install angelheap
 git clone https://github.com/scwuaptx/Pwngdb.git ~/.Pwngdb
