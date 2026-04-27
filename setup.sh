@@ -10,7 +10,6 @@ sudo apt install -y software-properties-common
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install -y python3.11 python3.11-dev python3.11-venv
-
 echo "alias python3=python3.11" >> ~/.zshrc
 
 # Install pip for python3.11
@@ -26,9 +25,9 @@ python3.11 -m pip install ROPGadget
 sudo gem install one_gadget
 
 # Install GEF (bata24 fork)
-wget https://raw.githubusercontent.com/bata24/gef/dev/gef.py
-mv gef.py .gef.py
-echo "source $(pwd)/.gef.py" >> ~/.gdbinit
+wget -q https://raw.githubusercontent.com/bata24/gef/dev/gef.py -O ~/.gef.py
+echo "source ~/.gef.py" >> ~/.gdbinit
+sudo cp ~/.gef.py /root/.gef.py
 
 # Install angelheap
 git clone https://github.com/scwuaptx/Pwngdb.git ~/.Pwngdb
@@ -45,7 +44,8 @@ end
 end
 EOF
 
-cp ~/.gdbinit /root/.gdbinit
+sudo cp -r ~/.Pwngdb/ /root/
+sudo cp ~/.gdbinit /root/.gdbinit
 
 # Install Docker dependencies
 sudo apt install -y ca-certificates gnupg lsb-release
