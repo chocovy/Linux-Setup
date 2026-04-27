@@ -27,7 +27,8 @@ sudo gem install one_gadget
 
 # Install GEF (bata24 fork)
 wget https://raw.githubusercontent.com/bata24/gef/dev/gef.py
-echo "source $(pwd)/gef.py" >> ~/.gdbinit
+mv gef.py .gef.py
+echo "source $(pwd)/.gef.py" >> ~/.gdbinit
 
 # Install angelheap
 git clone https://github.com/scwuaptx/Pwngdb.git ~/.Pwngdb
@@ -43,6 +44,8 @@ angelheap.init_angelheap()
 end
 end
 EOF
+
+cp ~/.gdbinit /root/.gdbinit
 
 # Install Docker dependencies
 sudo apt install -y ca-certificates gnupg lsb-release
